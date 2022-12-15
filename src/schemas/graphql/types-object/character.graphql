@@ -1,0 +1,24 @@
+type Character {
+    id: ID!,
+    name: String!,
+    status: String!,
+    species: String!,
+    type: String!,
+    gender: String!,
+    origin: Origin!,
+    location: LocationSchema!,
+    image: String!,
+    episode: [String!]!,
+    url: String!,
+    created: String!
+}
+
+type Origin {
+    name: String!,
+    url: String!
+}
+
+type LocationSchema {
+    name: String!,
+    url: String!
+}

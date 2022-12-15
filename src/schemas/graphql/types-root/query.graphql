@@ -1,0 +1,8 @@
+type Query {
+    charactersList: [Character!]!,
+    episodeList: [Episode!]!,
+    locationList: [Location!]!,
+    character(id: ID, name: String): Character!,
+    episode: Episode!,
+    location: Location!
+}
